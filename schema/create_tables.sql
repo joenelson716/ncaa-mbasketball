@@ -55,8 +55,10 @@ CREATE TABLE mregularseasondetailedresults (
 );
 
 CREATE TABLE mconferencetourneygames (
+	gameid SERIAL PRIMARY KEY,
 	season int,
 	confabbrev text,
+	daynum int,
 	wteamid,
 	lteamid
 );
